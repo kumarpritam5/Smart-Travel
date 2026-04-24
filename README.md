@@ -87,7 +87,6 @@ EXPO_PUBLIC_API_URL="https://your-backend-url.onrender.com"
 ## 📈 Deployment
 
 The app is optimized for deployment on **Render** (Backend) ![Render](https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white) and **EAS** (Mobile APK) ![EAS](https://img.shields.io/badge/EAS_Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
-![Render](https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white).
 
 ## 🤝 Contributing
 
