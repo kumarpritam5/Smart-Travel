@@ -1,0 +1,67 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id            String   @id @default(uuid())
+  name          String
+  email         String   @unique
+  password_hash String
+  created_at    DateTime @default(now())
+
+  trips         Trip[]
+}
+
+model Trip {
+  id            String   @id // Client-generated UUID
+  user_id       String
+  start_time    DateTime
+  end_time      DateTime?
+  distance      Float?   // in meters
+  duration      Int?     // in seconds
+  start_lat     Float?
+  start_lng     Float?
+  end_lat       Float?
+  end_lng       Float?
+  start_point   String?
+  destination   String?
+  description   String?
+  total_expense Float    @default(0)
+
+  user          User           @relation(fields: [user_id], references: [id])
+  routePoints   RoutePoint[]
+  expenses      Expense[]
+  
+  created_at    DateTime       @default(now())
+  updated_at    DateTime       @updatedAt
+}
+
+model RoutePoint {
+  id          String   @id // Client-generated UUID
+  trip_id     String
+  latitude    Float
+  longitude   Float
+  timestamp   DateTime
+
+  trip        Trip     @relation(fields: [trip_id], references: [id], onDelete: Cascade)
+}
+
+model Expense {
+  id             String   @id // Client-generated UUID
+  trip_id        String
+  amount         Float
+  category       String
+  note           String?
+  payment_method String?
+  latitude       Float?
+  longitude      Float?
+  timestamp      DateTime
+  is_auto        Boolean  @default(false)
+
+  trip           Trip     @relation(fields: [trip_id], references: [id], onDelete: Cascade)
+  created_at     DateTime @default(now())
+}
