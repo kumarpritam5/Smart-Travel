@@ -13,13 +13,29 @@ Smart Travel is a professional-grade, offline-first mobile application designed 
 - **Dual-Mode UI**: Full support for both Light and Dark modes with a premium, modern aesthetic.
 
 ## 🛠 Tech Stack
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-443E38?style=for-the-badge)
+![React Navigation](https://img.shields.io/badge/React_Navigation-6C47FF?style=for-the-badge)
+![Expo Location](https://img.shields.io/badge/Expo_Location-000020?style=for-the-badge&logo=expo)
 
-- **Frontend**: React Native, Expo, Zustand (State Management), React Navigation, Expo Location, React Native Maps.
-- **Backend**: Node.js, Express, Prisma (ORM), TypeScript.
-- **Database**: 
-  - *Local*: SQLite (on-device).
-  - *Remote*: PostgreSQL (Supabase/Render).
-- **Build Tooling**: EAS (Expo Application Services).
+### Backend
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+
+### 🗄 Database
+*Local*:
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+
+*Remote*
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+
+### ⚙️ Build & Deployment
+![EAS](https://img.shields.io/badge/EAS_Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
+![Render](https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white)
 
 ## 🚀 Getting Started
 
@@ -70,7 +86,8 @@ EXPO_PUBLIC_API_URL="https://your-backend-url.onrender.com"
 
 ## 📈 Deployment
 
-The app is optimized for deployment on **Render** (Backend) and **EAS** (Mobile APK). See the full documentation for a step-by-step production guide.
+The app is optimized for deployment on **Render** (Backend) ![Render](https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white) and **EAS** (Mobile APK) ![EAS](https://img.shields.io/badge/EAS_Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
+![Render](https://img.shields.io/badge/Render-000000?style=for-the-badge&logo=render&logoColor=white).
 
 ## 🤝 Contributing
 
@@ -79,10 +96,3 @@ The app is optimized for deployment on **Render** (Backend) and **EAS** (Mobile 
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
----
-*Created with ❤️ by Kumar Pritam & Antigravity (Powered by DeepMind)*
