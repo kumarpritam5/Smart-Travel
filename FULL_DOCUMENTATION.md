@@ -101,5 +101,3 @@ The app uses `expo-location` with a silent fetching strategy. It polls the devic
 - **GPS Optimization**: Currently records points every 10m. For long-haul trips, this can be increased to 100m to save battery.
 - **Pagination**: The Dashboard currently loads all recent trips. For power users, `loadTrips` should be updated to support chunked pagination.
 
----
-*End of Documentation — Smart Travel v1.0.0*
